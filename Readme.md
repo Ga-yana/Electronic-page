@@ -7,7 +7,7 @@ By Ga-yana  :headphones:
 
 ## A static website for electronic products.
 
-### Click [here]() to see it live
+### Click [here](https://electronicspage.netlify.app/) to see it live
 
 ![Homepage](./images/Screenshot%202022-08-05%20at%205.57.51%20PM.png)
 # 
