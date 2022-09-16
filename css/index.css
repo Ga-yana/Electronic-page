@@ -127,7 +127,7 @@ margin-left: 50px;
     padding: 12px 10px;
     margin-left: 27%;
     width: 200px;
-    margin-top: 38px;
+    margin-top: 80px;
     }
    
  .discount{
@@ -158,7 +158,7 @@ margin-left: 50px;
     flex-direction: row;
     margin-left: 31%;
     gap: 30px;
-    margin-top: 10px;
+    margin-top: 70px;
  }
  .dot{
     width: 25px;
@@ -245,6 +245,7 @@ margin-left: 50px;
     .sub-headline{
         text-align: center;
     }
+    
  }
 
  @media screen and (max-width:768px){
@@ -322,5 +323,8 @@ margin-left: 50px;
         padding: 10px 5px;
         margin: auto;
         margin-top: 20px;
+    }
+    .dots{
+        margin-left: 36%;
     }
  }
