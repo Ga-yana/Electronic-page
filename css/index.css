@@ -11,31 +11,27 @@
 nav {
   display: flex;
   flex-direction: row;
-  height: 15vh;
+  padding: 30px 0 30px 0;
   justify-content: space-between;
- 
   align-items: center;
+
 }
 
 nav img:nth-child(1){
     width:7%;
-    padding-left: 5%;
+    padding-left: 50px;
 }
 
 .nav-items {
     display: flex;
-   
     justify-content:center;
     font-size: 23px;
-    gap: 29%;
+    gap: 75px;
     font-weight: 100;
-    
  }
 
 nav img:nth-child(3){
-    
-    width: 20%;
-    justify-self: end;
+    width: 280px;
 }
 
 .intro-section{
@@ -43,37 +39,32 @@ nav img:nth-child(3){
     flex-direction: row;
     flex: 1;
     height: 85vh;
-   
+   justify-content: space-between;
 }
 
 .left-section{
     display: flex;
-    flex: 0.55;
     flex-direction: column;
     padding-left: 5%;
-   
     margin-top: 60px;
 }
 
 
 .right-section{
     display: flex;
-    flex: 0.45;
     flex-direction:column;
-  height: 80vh;
-  
+  /* height: 80vh; */
+  margin-right: 100px;
 }
 
 .left-section h3{
     font-size: 36px;
     font-weight: 200;
-   
 }
 
 .left-section h1{
     font-family: "Fredoka One";
-    font-size: 70px;
-    
+    font-size: 80px;
 }
 
 .sub-headlines{
@@ -94,6 +85,7 @@ nav img:nth-child(3){
     color: rgb(143, 143, 143);
     font-weight: 200;
     padding-top: 40px;
+    max-width: 650px;
 }
 
 .action-btns {
@@ -116,23 +108,9 @@ margin-left: 50px;
 
 .headphone-div{
     position: relative;
-   
     height: 450px;
+    width: 500px;
 }
-
-/* .headphone-div .discount{
-    position: absolute;
-    bottom: 85%;
-    z-index: 99;
-   
-}
-
-
-.headphone-div .discount-content{
-    position: absolute;
-    bottom: 55%;
-    z-index: 999;
-} */
 
 .headphone-div img:nth-child(3){
     width: 450px;
@@ -203,4 +181,146 @@ margin-left: 50px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
+ }
+
+ @media screen and (max-width:425px){
+    nav img:nth-child(1){
+        width: 70px;
+    }
+    nav img:nth-child(3){
+        width: 150px;
+    }
+    .nav-items{
+        display: none;
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 0 20px 0 20px;
+    }
+    .left-section{
+        margin-top: 0;
+    }
+    .left-section h3{
+        font-size: 23px;
+        margin: auto;
+    }
+    .left-section h1{
+        font-size: 8px;
+        text-align: center;
+        margin: auto;
+    }
+    .text{
+        text-align: center;
+        margin: auto;
+    }
+    .sub-headlines img{
+        width: 13px;
+        height: 13px;
+    }
+    .action-btns .action-btn{
+        font-size: 10px;
+        padding: 7px 12px;
+
+    }
+    .headphone-div{
+        height: 270px;
+        width: 280px;
+    }
+    .headphone-div img:nth-child(3){
+        width: 250px;
+    }
+    .sub-headlines{
+       display: flex;
+       flex-direction: column;
+       font-size: 11px;
+    }
+    .discount{
+        width: 100px;
+    }
+    .discount-content h1{
+        font-size: 30px;
+    }
+    .sub-headline{
+        text-align: center;
+    }
+ }
+
+ @media screen and (max-width:768px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav img:nth-child(3){
+        width: 200px;
+        align-self: flex-end;
+    }
+    nav img:nth-child(1){
+        width: 70px;
+    }
+    .nav-items{
+        gap:30px;
+        font-size: 16px;
+        margin-left: 60px;
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .left-section{
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .left-section h3{
+        margin: auto;
+    }
+    .left-section h1{
+        margin: auto;
+        font-size: 40px;
+    }
+    .sub-headlines{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding-left: 0;
+        margin: auto;
+    }
+    .sub-headline{
+        font-size: 15px;
+    }
+    .sub-headline img{
+        width: 15px;
+        height: 15px;
+    }
+    .text{
+        text-align: center;
+        margin: 0 30px 0 30px;
+        padding-top: 20px;
+    }
+    .action-btns{
+        margin: auto;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .action-btns .action-btn{
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    .right-section{
+        margin-top: 50px;
+        padding-bottom: 100px;
+        margin: auto;
+    }
+   
+    .right-section .action-btn{
+        font-size: 17px;
+        padding: 10px 5px;
+        margin: auto;
+        margin-top: 20px;
+    }
  }
